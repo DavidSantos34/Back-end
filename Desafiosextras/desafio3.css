@@ -1,0 +1,11 @@
+.meio{
+    text-align: center;
+    background-color: rgb(255, 0, 0);
+    margin-left: 200px;
+    margin-right: 200px;
+    border-radius: 20px;
+}
+
+h1,label{
+     text-align: center;
+}

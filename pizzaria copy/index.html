@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Pizzaria Verace</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+        <img src="Verace.jpg" alt="Logo da Pizzaria" class="img"  width ="200" height = "200" background-color = #ffffff border-radius= "20px">
+        <h1>🍕 Monte sua Pizza</h1>
+        <form action="pedido.php" method="POST">
+            <h3>1. Tamanho:</h3>
+            <label><input type="radio" name="tamanho" value="Broto" checked> Broto (R$ 45)</label>
+            <label><input type="radio" name="tamanho" value="Grande"> Grande (R$ 65)</label>
+
+            <h3>2. Sabores (1 ou 2):</h3>
+            <label><input type="checkbox" name="sabores[]" value="Calabresa"> Calabresa</label>
+            <label><input type="checkbox" name="sabores[]" value="Mussarela"> Mussarela</label>
+            <label><input type="checkbox" name="sabores[]" value="Frango"> Frango</label>
+            <label><input type="checkbox" name="sabores[]" value="Portuguesa"> Portuguesa</label>
+            <label><input type="checkbox" name="sabores[]" value="Lombo"> Lombo</label>
+
+            <h3>3. Bebidas:</h3>
+            <select name="refri">
+                <option value="Nenhum">Nenhum</option>
+                <option value="Coca">Coca 2L (R$ 12)</option>
+                <option value="Guarana">Guaraná 2L (R$ 10)</option>
+                <option value="heineken">heineken Long Neck 330ml (R$ 7)</option>
+                <option value="Chopp">Chopp Brahma 350ml (R$ 13)</option>
+            </select>
+
+            <h3>4. Borda:</h3>
+            <label><input type="radio" name="borda" value="Nenhuma" checked> Nenhuma (R$ 0)</label>
+            <label><input type="radio" name="borda" value="Catupiry" checked> Catupiry (R$ 5)</label>
+            <label><input type="radio" name="borda" value="Cheddar"> Cheddar (R$ 5)</label>
+
+            <h3>5. Cupom de Desconto</h3>
+            <input type="text" name="Cupom" >Cupom de Desconto
+
+            <button type="submit">Calcular Total</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+body {
+    font-family: sans-serif;
+    background: rgb(255, 255, 255);
+    padding-top: 20px;
+}
+
+.box {
+    background: rgb(163, 44, 44);
+    width: 380px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+label, select, button, .btn {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+button, .btn {
+    padding: 10px;
+    background: #530303;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+}
+
+.wsp {
+    background: #25d366;
+}
+
+.img{
+    width: "200"; 
+    height: "200";
+     background-color: #ffffff;
+    border-radius: 2px;
+  }

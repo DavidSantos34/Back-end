@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameIA - Especialista em jogos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <img src="GameIA.jpg" width="200" alt="GeekIA Logo">
+
+        <h2>Especialista em jogos</h2>
+
+        <p>Responda descubra qual jogo combina com você.</p>
+
+        <form action="processa.php" method="POST">
+
+            <div class="form-group">
+                <label>Qual estilo de jogo você prefere?</label>
+
+                <select name="tipo" required>
+                    <option value="">Selecione...</option>
+                    <option value="Ação">Ação</option>
+                    <option value="Aventura">Aventura</option>
+                    <option value="RPG">RPG</option>
+                    <option value="Estratégia">Estratégia</option>
+                    <option value="Sandbox">Sandbox</option>
+                    <option value="Tabuleiro">Jogos de Tabuleiro</option>
+                    <option value="Cartas">Jogos de Cartas </option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Qual categoria de jogo você prefere?</label>
+
+                <select name="genero" required>
+                    <option value="">Selecione...</option>
+                    <option value="Eletronicos">Jogos Eletronicos</option>
+                    <option value="Tradicionais">Jogos Tradicionais de cartas ou tabuleiro</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Quanto tempo você gosta das durações dos jogos?</label>
+
+                <select name="tamanho" required>
+                    <option value="">Selecione...</option>
+                    <option value="Curtas">Curtas e rápidas</option>
+                    <option value="Longas">Longas e envolventes</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Você jogará por onde?</label>
+
+                <select name="onde" required>
+                    <option value="">Selecione...</option>
+                    <option value="Celular">Celular</option>
+                    <option value="Computador">Computador</option>
+                    <option value="Videogame">Videogame</option>
+                    <option value="Mão">Jogo vida real</option>
+                </select>
+            </div>
+
+            <button type="submit">Recomendar 🚀</button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
